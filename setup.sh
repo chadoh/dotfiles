@@ -82,6 +82,8 @@ ln -fns $SRC/ag/agignore $USER_DIR/$USER/.agignore
 
 ln -fns $SRC/tmux/tmux.conf $USER_DIR/$USER/.tmux.conf
 
+ln -fns $SRC/tmate/tmate.conf $USER_DIR/$USER/.tmate.conf
+
 ln -fns $SRC/ruby/gemrc $USER_DIR/$USER/.gemrc
 
 if [ ! -d "$USER_DIR/$USER/bin" ]; then
@@ -97,7 +99,7 @@ tic $SRC/tmux.terminfo
 
 if [ -z $QUIET ]; then
   echo "Success! Check it out:"
-  ls -ld $USER_DIR/$USER/.machine_nickname $USER_DIR/$USER/.bashrc $USER_DIR/$USER/.bash_profile $USER_DIR/$USER/.functions $USER_DIR/$USER/.inputrc $USER_DIR/$USER/.gitconfig $USER_DIR/$USER/.gitignore $USER_DIR/$USER/.vim-tmp $USER_DIR/$USER/.vimrc $USER_DIR/$USER/.vim/UltiSnips $USER_DIR/$USER/.ackrc $USER_DIR/$USER/.agignore $USER_DIR/$USER/.tmux.conf $USER_DIR/$USER/.gemrc $USER_DIR/$USER/bin/ts $USER_DIR/$USER/bin/t $USER_DIR/$USER/bin/kt
+  ls -ld $USER_DIR/$USER/.machine_nickname $USER_DIR/$USER/.bashrc $USER_DIR/$USER/.bash_profile $USER_DIR/$USER/.functions $USER_DIR/$USER/.inputrc $USER_DIR/$USER/.gitconfig $USER_DIR/$USER/.gitignore $USER_DIR/$USER/.vim-tmp $USER_DIR/$USER/.vimrc $USER_DIR/$USER/.vim/UltiSnips $USER_DIR/$USER/.ackrc $USER_DIR/$USER/.agignore $USER_DIR/$USER/.tmux.conf $USER_DIR/$USER/.tmate.conf $USER_DIR/$USER/.gemrc $USER_DIR/$USER/bin/ts $USER_DIR/$USER/bin/t $USER_DIR/$USER/bin/kt
   echo "
   Notice that .gitconfig is not symlinked, since your git username is set in .extra (see readme)"
 fi
